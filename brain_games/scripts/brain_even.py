@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-
+import prompt
 from random import randint
-from brain_games.scripts.brain_games import main
 
 
-def brain_even():
+def welcome_user():
+    name = prompt.string('May I have your name? ')
+    print('Hello, ' + name)
 
-    brain_games.scripts.brain_games.main()
 
 
+def brain_even(name):
+    
     counter = 0
+    
     while counter < 3:
 
         a = randint(1, 100)
@@ -24,17 +27,18 @@ def brain_even():
 
         if a % 2 == 0 and answer != 'yes':
             print(f"'{answer}' is wrong answer. ;(. Correct answer was 'yes'")
-            print(f"Let's try again, Bill!" )
+            print(f"Let's try again, {name}!" )
             break
 
         if a % 2 != 0 and answer != 'no':
             print(f"'{answer}' is wrong answer. ;(. Correct answer was 'no'")
-            print(f"Let's try again, Bill!")
+            print(f"Let's try again, {name}!")
             break
 
         if counter == 3:
-            print (f"Congratulations, Bill!")
+            print (f"Congratulations, {name}!")
 
 
 if __name__ == '__main__':
-    main()
+    name = welcome_user()
+    brain_even(name)
