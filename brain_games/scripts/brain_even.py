@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
+
 import prompt
 from random import randint
 
 
-def welcome_user():
+def brain_even():
+
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name)
-
-
-
-def brain_even(name):
+    
     
     counter = 0
     
@@ -40,5 +39,4 @@ def brain_even(name):
 
 
 if __name__ == '__main__':
-    name = welcome_user()
-    brain_even(name)
+    brain_even()
