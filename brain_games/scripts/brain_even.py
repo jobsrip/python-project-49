@@ -4,7 +4,7 @@ import prompt
 from random import randint
 
 
-def brain_even():
+def main():
 
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name)
@@ -39,4 +39,4 @@ def brain_even():
 
 
 if __name__ == '__main__':
-    brain_even()
+    main()
