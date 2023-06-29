@@ -5,16 +5,7 @@ import random
 
 
 
-def main():
-    
-    name = prompt.string('May I have your name? ')
-    print('Hello, ' + name)
-    
-    score_to_win = 3
-    score = 0
-    
-    while score < score_to_win:
-    
+task = ('What is the result of the expression?')
     
         operator = random.choice(['+', '*', '-'])
         num1 = random.randint(5, 10)
@@ -47,7 +38,7 @@ def main():
         
         if score == score_to_win:
             print(f"Congratulations, {name}!")
-            break 
+            break
 
 
 
