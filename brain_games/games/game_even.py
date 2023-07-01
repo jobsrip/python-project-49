@@ -1,35 +1,26 @@
-#!/usr/bin/env python3
+from random import randint
 
-
-from brain_games.architecture.engine import loose, win, my_function, check, even_question
-
-
-
-
-def main():
-    
-    score = 0
-    score_to_win = 3
-    my_function()
-    while score < score_to_win:
-        even_question()
-        check(answer, correct_answer, score, score_to_win)
-
-main()
+DESCRIPTION = "Answer 'yes' if the number is even. Otherwise answer 'no'."
+MIN_NUMBER = 1
+MAX_NUMBER = 999
 
 
 
+def is_even(num: int) -> bool:
+        flag = False
+        if num % 2 == 0:
+                flag = True
+        return flag
+            
 
 
+def make_question_and_correct_answer():
+        number = randint(MIN_NUMBER, MAX_NUMBER)
+        question = str(number)
+        if is_even(number):
+                correct_answer = 'yes'
+        else: 
+                correct_answer = 'no'
+        return question, correct_answer
 
-
-
-
-
-
-
-
-
-
-if __name__ == '__main__':
-    main()
+        
