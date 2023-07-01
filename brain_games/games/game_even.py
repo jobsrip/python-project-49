@@ -15,10 +15,10 @@ def is_even(num: int) -> bool:
 
 
 def make_question_and_correct_answer():
-        number = randint(MIN_NUMBER, MAX_NUMBER)
-        question = str(number)
+        num = randint(MIN_NUMBER, MAX_NUMBER)
+        question = str(num)
 
-        if is_even(number):
+        if is_even(num):
                 correct_answer = 'yes'
         else:
                 correct_answer = 'no'
