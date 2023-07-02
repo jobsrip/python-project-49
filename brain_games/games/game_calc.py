@@ -2,7 +2,7 @@ from random import choice, randint
 from operator import sub, add, mul
 
 MIN_NUMBER = 1
-MAX_NUMBER = 10
+MAX_NUMBER = 15
 DESCRIPTION = 'What is the result of the expression?'
 
 

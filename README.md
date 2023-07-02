@@ -10,3 +10,4 @@ Asciinema recs:
 brain-even: https://asciinema.org/a/590022
 brain-calc: https://asciinema.org/a/xqHklnmDMjNFodW6o9uVG3nbv
 brain-gcd: https://asciinema.org/a/OL3F8o92z9Xz387wPsXbmUFzm
+brain-progression: https://asciinema.org/a/rbVhdk50KMnLPmLVS87DfAu5X

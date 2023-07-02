@@ -1,32 +1,37 @@
-from random import randint, choice
+from random import randint 
 
-START_NUMBER = 1
-END_NUMBER = 50
-MIN_NUMBER = 1
-MAX_NUMBER = 100
-MIN_LENGTH = 5
-MAX_LENGTH = 10
-MIN_STEP = 2
-MAX_STEP = 5 
-DESCRIPTION = 'What number is missing in the progression?'
+START_MIN, START_MAX = 1, 50
+STEP_MIN, STEP_MAX = 2, 5
+LENGTH_MIN, LENGTH_MAX = 5, 10
+DESCRIPTION = 'What number is missing in progression?'
 
 
 
-def make_progression(start, end, step):
-
-    start = randint(START_NUMBER, END_NUMBER)
-    step = randint(MIN_STEP, MAX_STEP) 
-    length = randint(MIN_LENGTH, MAX_LENGTH) 
-    end = (start + (step * (length - 1)))
-    range_in_list = [str(start + i * step) for i in range (length)]
-    progression = ''.join(range_in_list)
+def make_progression(start,step,length):
+    progression = [str(start + i * step) for i in range(length)]
     return progression
 
+
+
+def hide_element(progression):
+
+    secret_index = randint(0, len(progression)-1)
+    secret_element = progression[secret_index]
+    progression[secret_index] = '..'
+    return secret_element, progression
 
 
 
 
 
 def make_question_and_correct_answer():
-    
+    start = randint(START_MIN,START_MAX)
+    step = randint(STEP_MIN, STEP_MAX)
+    length = randint(LENGTH_MIN, LENGTH_MAX)
+    progression = make_progression(start,step,length)
+    correct_answer, progression = hide_element(progression)
+    question = ' '.join(map(str, progression))
+    return question, str(correct_answer)
+
+
     
