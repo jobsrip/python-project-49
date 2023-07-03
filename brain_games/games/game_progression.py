@@ -3,17 +3,17 @@ from random import randint
 START_MIN, START_MAX = 1, 50
 STEP_MIN, STEP_MAX = 2, 5
 LENGTH_MIN, LENGTH_MAX = 5, 10
-DESCRIPTION = 'What number is missing in progression?'
+DESCRIPTION = 'What number is missing in the progression?'
 
 
 
-def make_progression(start,step,length):
+def make_progression(start,step,length):     # generate a progresison
     progression = [str(start + i * step) for i in range(length)]
     return progression
 
 
 
-def hide_element(progression):
+def hide_element(progression):               # hide random element 
 
     secret_index = randint(0, len(progression)-1)
     secret_element = progression[secret_index]
@@ -24,7 +24,7 @@ def hide_element(progression):
 
 
 
-def make_question_and_correct_answer():
+def make_question_and_correct_answer():   # make question and answer for the game
     start = randint(START_MIN,START_MAX)
     step = randint(STEP_MIN, STEP_MAX)
     length = randint(LENGTH_MIN, LENGTH_MAX)

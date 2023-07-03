@@ -8,7 +8,7 @@ DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 
-def make_question_and_correct_answer():
+def make_question_and_correct_answer(): # make question and answer for the game
     num1 = randint(MIN_NUM, MAX_NUM)
     num2 = randint(MIN_NUM, MAX_NUM)
     correct_answer = gcd(num1,num2)

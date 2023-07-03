@@ -1,3 +1,5 @@
+# STarting brain-calc 
+
 from brain_games.architecture.engine import run_game
 from brain_games.games import game_calc
 
@@ -8,4 +10,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    

@@ -6,8 +6,8 @@ MAX_NUMBER = 15
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def make_question_and_correct_answer():
-    num1 = randint(MIN_NUMBER, MAX_NUMBER)
+def make_question_and_correct_answer():    # make question and answer for the game
+    num1 = randint(MIN_NUMBER, MAX_NUMBER)  
     num2 = randint(MIN_NUMBER, MAX_NUMBER)
     operation, operator = choice([
         (add, '+'),

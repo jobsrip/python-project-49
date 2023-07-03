@@ -1,10 +1,10 @@
-import prompt
+import prompt         # Architecture of the games 
 
 
 MAX_ROUND = 3
 
 
-def run_game(game_name):
+def run_game(game_name):   # Run the Brain Games
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f"Hello, {user_name}!")

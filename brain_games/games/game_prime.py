@@ -8,8 +8,8 @@ DESCRIPTION =f"Answer 'yes' if the given number is prime. Otherwise answer 'no'.
 
 
 
-def is_prime(num: int) -> bool:
-    
+def is_prime(num: int) -> bool:   # Checking if the nubmer is prime
+                                  
     flag = True
     
     for i in range(2, num):
@@ -26,7 +26,7 @@ def is_prime(num: int) -> bool:
     
 
 
-def make_question_and_correct_answer():
+def make_question_and_correct_answer(): # make question and answer for the game
     
     num = randint(MIN_NUM, MAX_NUM)
     question = str(num)

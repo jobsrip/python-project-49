@@ -1,3 +1,5 @@
+# Starting brain-gcd
+
 from brain_games.architecture.engine import run_game
 from brain_games.games import game_gcd
 

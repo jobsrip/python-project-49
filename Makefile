@@ -11,9 +11,9 @@ brain-even:
 	poetry run brain-even
 
 
-
 brain-calc:
 	poetry run brain-calc
+
 
 brain-gcd:
 	poetry run brain-gcd
@@ -41,11 +41,6 @@ package-install:
 
 package-reinstall:
 	python3 -m pip install --user --force-reinstall dist/*.whl
-
-
-
-
-
 
 
 lint:
