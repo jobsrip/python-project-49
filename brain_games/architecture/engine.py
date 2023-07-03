@@ -1,4 +1,5 @@
-import prompt         # Architecture of the games 
+"""Engine for the Brain Games"""
+import prompt
 
 
 MAX_ROUND = 3
@@ -20,11 +21,8 @@ def run_game(game_name):   # Run the Brain Games
             print(f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again {user_name}!")
             return
-       
+
         if (correct_answer == user_answer):
             print('Correct!')
 
     print(f"Congragulations, {user_name}!")
-
-
-

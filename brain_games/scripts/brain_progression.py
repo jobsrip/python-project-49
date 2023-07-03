@@ -1,7 +1,9 @@
-# Starting brain-progression
+"""Starting brain-progression game"""
+
 
 from brain_games.architecture.engine import run_game
 from brain_games.games import game_progression
+
 
 def main():
     run_game(game_progression)

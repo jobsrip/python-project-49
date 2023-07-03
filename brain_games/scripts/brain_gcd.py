@@ -1,7 +1,9 @@
-# Starting brain-gcd
+"""Starting brain-gcd game"""
+
 
 from brain_games.architecture.engine import run_game
 from brain_games.games import game_gcd
+
 
 def main():
     run_game(game_gcd)

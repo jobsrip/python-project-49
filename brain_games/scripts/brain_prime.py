@@ -1,8 +1,9 @@
-# Starting brain-prime 
+"""Starting brain-prime game"""
 
 
 from brain_games.architecture.engine import run_game
 from brain_games.games import game_prime
+
 
 def main():
     run_game(game_prime)
