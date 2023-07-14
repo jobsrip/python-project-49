@@ -25,4 +25,4 @@ def run_game(game_name):   # Run the Brain Games
         if (correct_answer == user_answer):
             print('Correct!')
 
-    print(f"Congragulations, {user_name}!")
+    print(f"Congratulations, {user_name}!")
