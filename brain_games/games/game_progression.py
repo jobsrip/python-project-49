@@ -16,7 +16,7 @@ def make_progression(start, step, length):
 def hide_element(progression):
     """Hide random element"""
 
-    secret_index = randint(0, len(progression) -1)
+    secret_index = randint(0, len(progression) - 1)
     secret_element = progression[secret_index]
     progression[secret_index] = '..'
     return secret_element, progression
