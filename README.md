@@ -3,6 +3,10 @@
 <a href="https://codeclimate.com/github/jobsrip/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/2e8e6d60fe9584926578/maintainability" /></a>
 
 
+Installation 
+
+<script async id="asciicast-HHTxRDG6vvHT9UVt8EGZ62hFI" src="https://asciinema.org/a/HHTxRDG6vvHT9UVt8EGZ62hFI.js"></script>
+
 
 
 Asciinema recs:
